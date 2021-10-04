@@ -9,6 +9,12 @@ public class QueueClass {
         queue.print();
         queue.putTail(142);
         queue.print();
+        Queue[] listOfQueue = new Queue[10];
+        for (Queue a : listOfQueue){
+            a = new Queue(10);
+            a.print();
+            System.out.println("---------------");
+        }
     }
 }
 class Queue {
@@ -41,6 +47,7 @@ class Queue {
         return res;
     }
     void print(){
+
         int itGet = getInd;
         for (int i = 0; i < count; i++){
             System.out.print(queue[itGet++]+" ");
