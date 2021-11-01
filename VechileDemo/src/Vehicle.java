@@ -1,6 +1,6 @@
 public class Vehicle {
     private double length, width, tank, avgMph, load;
-
+    protected int myVar = 111_111;
     Vehicle(){
         length = width = tank = avgMph = load = 0;
     }
